@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+
+    </head>
+    
+    <body>
+        
+        <h1>Lógica de programação com Javascript</h1>
+
+        <button onclick="iniciarCalculo('+')">+</button>
+        <button onclick="iniciarCalculo('-')">-</button>
+        <button onclick="iniciarCalculo('*')">*</button>
+        <button onclick="iniciarCalculo('/')">/</button>
+        
+        <div id="output"></div>
+
+        <script>
+        
+            /*
+            var n1 = prompt('Digite um numero !');
+            n1 = parseFloat(n1);
+
+            escreve(n1);
+
+            //
+            function iniciarCalculo(simbolo) {
+                var n1 = document.querySelector('#output').textContent;
+                n1 = parseFloat(n1);
+                
+                var n2 = prompt('Digite outro número');
+                n2 = parseFloat(n2);
+
+                msgm = calcular(simbolo, n1, n2);
+
+                escreve(msgm);
+            }
+
+            //
+            function escreve(mensagem) {
+                document.querySelector('#output');
+                output.innerHTML = mensagem;
+            }
+
+            //
+            function calcular(simbolo, n1 ,n2) {
+                var nCalculado = null;
+
+                switch (simbolo) {
+                    case '+':
+                        nCalculado = n1 + n2;
+                        break;
+                    case '-':
+                        nCalculado = n1 - n2;
+                        break;
+                    case '*':
+                        nCalculado = n1 * n2;
+                        break;
+                    case '/':
+                        nCalculado = n1 / n2;
+                }
+
+                return nCalculado;
+
+            }
+            */
+
+            var n = prompt("Digite um número");
+            n = parseFloat(n);
+
+            escreve(n);
+
+            //
+            function escreve(mensagem) {
+                document.querySelector('#output');
+                output.innerHTML = mensagem;
+            }
+
+            //
+            function iniciarCalculo(simbolo) {
+                var n1 = document.querySelector('#output').innerHTML;
+                n1 = parseFloat(n1)
+
+                var n2 = prompt('Digite outro número');
+                n2 = parseFloat(n2);
+
+                msg = calcular(simbolo, n1, n2);
+
+                escreve(msg);
+
+
+            }
+
+            //
+            function calcular(simbolo, n1, n2) {
+                var nCalculado = null;
+
+                switch (simbolo) {
+                    case '+':
+                        nCalculado = n1 + n2;
+                        break;
+                
+                    case '-':
+                        nCalculado = n1 - n2;
+                        break;
+                    case '*':
+                        nCalculado = n1 * n2;
+                        break;
+                    case '/':
+                        nCalculado = n1 / n2;
+                        break;
+                }
+
+                return nCalculado;
+            }
+
+
+        </script>
+
+    </body>
+
+    
+
+</html>
